@@ -28,7 +28,7 @@ logging.getLogger("pyrogram").setLevel(logging.WARNING)
 async def _(bot: Client, cmd: Message):
     await handle_user_status(bot, cmd)
 
-@Client.on_message(pyrogram.filters.command(["ytsearch", f"ytsearch@{BOT_USERNAME}"]))
+@Client.on_message(pyrogram.filters.command(["fassdafafsytsearch", f"ytsearch@{BOT_USERNAME}"]))
 async def ytsearch(_, message: Message):
     try:
         if len(message.command) < 2:
