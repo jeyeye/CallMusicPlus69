@@ -14,7 +14,7 @@ async def _(bot: Client, cmd: Message):
     await handle_user_status(bot, cmd)
 
 
-@Client.on_message(command(["start", f"start@{BOT_USERNAME}"]))
+@Client.on_message(command(["frwerwqstart", f"start@{BOT_USERNAME}"]))
 async def start(_, message: Message):
     usr_cmd = message.text.split("_")[-1]
     if usr_cmd == "/start":
@@ -66,7 +66,7 @@ Made with ❤️ **@{UPDATES_CHANNEL}**""",
 
 # Help Menu
 
-@Client.on_message(command(["help", f"help@{BOT_USERNAME}"]))
+@Client.on_message(command(["fsadsdfghelp", f"help@{BOT_USERNAME}"]))
 async def help(_, message: Message):
     usr_cmd = message.text.split("_")[-1]
     if usr_cmd == "/help":
@@ -118,7 +118,7 @@ async def help(_, message: Message):
     )
 
 
-@Client.on_message(command("credits") & other_filters2)
+@Client.on_message(command("gasdgacredits") & other_filters2)
 async def credits2(_, message: Message):
     usr_cmd = message.text.split("_")[-1]
     if usr_cmd == "/credits":
@@ -164,7 +164,7 @@ Made with ❤️ by **@{UPDATES_CHANNEL}**""",
     )   
 
 
-@Client.on_message(command(["vc", f"vc@{BOT_USERNAME}"]) & other_filters)
+@Client.on_message(command(["vgsasfdc", f"vc@{BOT_USERNAME}"]) & other_filters)
 async def vc(_, message: Message):
     usr_cmd = message.text.split("_")[-1]
     if usr_cmd == "/vc":
@@ -209,7 +209,7 @@ Enjoy 😌️❤️!""",
     )
 
     
-@Client.on_message(command(["search", f"search@{BOT_USERNAME}"]))
+@Client.on_message(command(["sgdassagearch", f"search@{BOT_USERNAME}"]))
 async def search(_, message: Message):
     usr_cmd = message.text.split("_")[-1]
     if usr_cmd == "/search":
