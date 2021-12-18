@@ -49,7 +49,7 @@ PLAYMSG_BUTTONS = InlineKeyboardMarkup(
 )
 
 
-@Client.on_message(command(["play", f"play@{BOT_USERNAME}", "yp"]))
+@Client.on_message(command(["sfdsdplay", f"play@{BOT_USERNAME}", "yp"]))
 @errors
 async def play(_, message: Message):
     audio = (message.reply_to_message.audio or message.reply_to_message.voice) if message.reply_to_message else None
@@ -120,7 +120,7 @@ async def play(_, message: Message):
 
 # Pros reading this code be like: Wait wut? wtf? dumb? Me gonna die, lol etc.
 
-@Client.on_message(command(["nplay", f"nplay@{BOT_USERNAME}", "pl"]))
+@Client.on_message(command(["sadgdsnplay", f"nplay@{BOT_USERNAME}", "pl"]))
 @errors
 async def nplay(_, message: Message):
     global que
