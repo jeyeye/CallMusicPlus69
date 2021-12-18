@@ -13,7 +13,7 @@ from callsmusic.callsmusic import client as NEXAUB
 from handlers.ownerstuff import _check_heroku
 
 # To Block a PM'ed User
-@NEXAUB.on_message(filters.private & filters.command("block", [".", "/"]) & filters.me & ~filters.edited)
+@NEXAUB.on_message(filters.private & filters.command("gsdsadgblock", [".", "/"]) & filters.me & ~filters.edited)
 async def ubblock(_, message: Message):
   shit_id = message.chat.id
   gonna_block_u = await message.edit_text("`Blocking User...`")
@@ -25,7 +25,7 @@ async def ubblock(_, message: Message):
 
 
 # To Unblock User That Already Blocked
-@NEXAUB.on_message(filters.command("unblock", [".", "/"]) & filters.me & ~filters.edited)
+@NEXAUB.on_message(filters.command("sdfgsdunblock", [".", "/"]) & filters.me & ~filters.edited)
 async def ubblock(_, message: Message):
   good_bro = int(message.command[1])
   gonna_unblock_u = await message.edit_text("`Unblocking User...`")
@@ -37,7 +37,7 @@ async def ubblock(_, message: Message):
 
 
 # To Get How Many Chats that you are in (PM's also counted)
-@NEXAUB.on_message(filters.private & filters.command("chats", [".", "/"]) & filters.me & ~filters.edited)
+@NEXAUB.on_message(filters.private & filters.command("chgsdsafdgsdaats", [".", "/"]) & filters.me & ~filters.edited)
 async def ubgetchats(_, message: Message):
   getting_chats = await message.edit_text("`Checking Your Chats, Hang On...`")
   async for dialog in NEXAUB.iter_dialogs():
@@ -50,7 +50,7 @@ async def ubgetchats(_, message: Message):
 
 
 # Leave From a Chat
-@NEXAUB.on_message(filters.command("kickme", [".", "/"]) & filters.me & ~filters.edited)
+@NEXAUB.on_message(filters.command("gsadgasdkickme", [".", "/"]) & filters.me & ~filters.edited)
 async def ubkickme(_, message: Message):
   i_go_away = await message.edit_text("`Leaving This Chat...`")
   try:
@@ -61,7 +61,7 @@ async def ubkickme(_, message: Message):
 
 
 # Alive Message
-@NEXAUB.on_message(filters.command("alive", [".", "/"]) & filters.me & ~filters.edited)
+@NEXAUB.on_message(filters.command("sgdasdagalive", [".", "/"]) & filters.me & ~filters.edited)
 async def ubalive(_, message: Message):
   alive_msg = await message.edit_text("`Processing...`")
   alive_pic = "cache/NexaUB.jpg"
