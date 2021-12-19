@@ -23,4 +23,4 @@ psutil
 ffmpeg-python
 heroku3
 gitpython
-
+regex
