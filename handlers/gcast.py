@@ -6,11 +6,11 @@ from pyrogram.types import Dialog
 from pyrogram.types import Chat
 from pyrogram.types import Message
 from aiohttp import ClientSession
-from CallMusicPlus69.config import SUDO_USERS, BOT_TOKEN
+from config import SUDO_USERS, BOT_TOKEN
 from pyrogram.errors import UserAlreadyParticipant
 
-from CallMusicPlus69.callsmusic.callsmusic import client as USER
-from CallMusicPlus69.config import SUDO_USERS
+from callsmusic.callsmusic import client as USER
+from config import SUDO_USERS
 
 @Client.on_message(filters.command(["gcast"]))
 async def broadcast(_, message: Message):
